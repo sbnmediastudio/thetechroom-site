@@ -1,62 +1,106 @@
+<!-- index.html - Homepage -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Tech Room - Weekly Semiconductor News</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            color: #333;
-            margin: 0;
-            padding: 0;
+    <title>The Tech Room 2.0 - Technology, Innovation & Insights</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        function toggleMode() {
+            document.body.classList.toggle('light-mode');
         }
-        header {
-            background-color: #002b45;
-            color: white;
-            padding: 20px;
-            text-align: center;
-        }
-        h1 {
-            margin: 0;
-        }
-        main {
-            padding: 20px;
-            max-width: 900px;
-            margin: auto;
-            background-color: white;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-        }
-        .article {
-            margin-bottom: 40px;
-        }
-        .article h2 {
-            color: #005a87;
-        }
-        footer {
-            background-color: #002b45;
-            color: white;
-            text-align: center;
-            padding: 10px;
-            font-size: 14px;
-            margin-top: 40px;
-        }
-    </style>
+    </script>
 </head>
 <body>
     <header>
-        <h1>The Tech Room</h1>
-        <p>Weekly AI-Generated Semiconductor & Tech Industry News</p>
+        <div class="logo">The Tech Room 2.0</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="technology-ai.html">Technology & AI</a></li>
+                <li><a href="gaming.html">Gaming</a></li>
+                <li><a href="courses-learning.html">Courses & Learning</a></li>
+                <li><a href="economics-business.html">Economics & Business</a></li>
+                <li><a href="blog-of-the-week.html">Blog of the Week</a></li>
+                <li><a href="about-contact.html">About & Contact</a></li>
+            </ul>
+        </nav>
+        <div class="mode-toggle" onclick="toggleMode()">Toggle Mode</div>
     </header>
-    <main>
-        <div class="article">
-            <h2>Welcome to The Tech Room!</h2>
-            <p>This is where each week’s AI-generated tech and semiconductor market update will appear automatically from our n8n workflow.</p>
+
+    <section class="hero" style="background-image: url('https://source.unsplash.com/random/1920x1080/?tech,futuristic');">
+        <h1>The Tech Room — Technology, Innovation & Insights</h1>
+        <p>Your weekly hub for cutting-edge news in AI, gaming, semiconductors, and more.</p>
+        <a href="#featured" class="cta" style="background: #00FFAA; padding: 1rem 2rem; border-radius: 5px;">Explore Now</a>
+    </section>
+
+    <section id="featured" class="section">
+        <h2>Block of the Week</h2>
+        <div class="card" style="max-width: 800px; margin: 0 auto;">
+            <img src="https://source.unsplash.com/random/800x400/?nvidia,ai" alt="NVIDIA AI">
+            <h3>NVIDIA’s AI Boom: Far From Over Despite Tepid Sales Forecasts</h3>
+            <p>NVIDIA CEO Jensen Huang asserts the AI surge is just beginning, projecting continued growth amid record investments. Despite a softer sales outlook, global AI infrastructure spending hits new highs in 2025. NVIDIA reported Q2 fiscal 2026 revenue of $46.7 billion, up 56% year-over-year, with data center revenue at $41.1 billion.</p>
+            <a href="blog-of-the-week.html">Read More</a>
         </div>
-    </main>
+    </section>
+
+    <section class="section">
+        <h2>Trending Topics</h2>
+        <div class="carousel">
+            <div class="card">
+                <img src="https://source.unsplash.com/random/300x200/?ai" alt="AI">
+                <h3>OpenAI and SoftBank's Stargate Data Center Push</h3>
+                <p>Planning a new facility by end-2025 for advanced AI initiatives. This massive data center project aims to support next-gen AI models.</p>
+            </div>
+            <div class="card">
+                <img src="https://source.unsplash.com/random/300x200/?gaming" alt="Gaming">
+                <h3>Gears of War: Reloaded Hits Game Pass</h3>
+                <p>Xbox's latest wave includes remastered classics, boosting subscriber engagement.</p>
+            </div>
+            <div class="card">
+                <img src="https://source.unsplash.com/random/300x200/?semiconductor" alt="Semiconductor">
+                <h3>Global Sales to Hit $700B in 2025</h3>
+                <p>AI drives record-breaking semiconductor revenue, with sales up 20.6% year-to-year.</p>
+            </div>
+            <div class="card">
+                <img src="https://source.unsplash.com/random/300x200/?startup" alt="Startup">
+                <h3>Hemi Raises $15M for Bitcoin DeFi</h3>
+                <p>Blockchain infrastructure boom continues with new funding rounds.</p>
+            </div>
+            <div class="card">
+                <img src="https://source.unsplash.com/random/300x200/?economics" alt="Economics">
+                <h3>AI Investments Squeeze US Economy</h3>
+                <p>Tech boom props up growth but pressures other sectors, with GDP forecasts at 1.9% for 2025.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <h2>Latest Previews</h2>
+        <div class="card-grid">
+            <!-- Technology & AI Preview -->
+            <div class="card">
+                <img src="https://source.unsplash.com/random/300x200/?ai,tech" alt="Tech">
+                <h3>ASML Pushes High-NA EUV for 2nm Chips</h3>
+                <p>ASML advances High-NA EUV lithography, enabling 2nm nodes...</p>
+                <a href="technology-ai.html">Read More</a>
+            </div>
+            <!-- Gaming Preview -->
+            <div class="card">
+                <img src="https://source.unsplash.com/random/300x200/?gaming" alt="Gaming">
+                <h3>Baldur’s Gate 3 Wins Game of the Year</h3>
+                <p>Continued acclaim for the RPG masterpiece...</p>
+                <a href="gaming.html">Read More</a>
+            </div>
+            <!-- More previews... -->
+        </div>
+    </section>
+
     <footer>
-        &copy; 2025 The Tech Room | All content auto-generated from public news sources
+        <p>© 2025 The Tech Room 2.0</p>
+        <div>Subscribe to Newsletter</div>
+        <!-- Social links -->
     </footer>
 </body>
 </html>
